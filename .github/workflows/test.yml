@@ -13,7 +13,7 @@ jobs:
       - name: "Checkout Repository"
         uses: actions/checkout@v4
       - name: "Security Check"
-        uses: pycord-development/execute-whitelist-action@v1.0.3
+        uses: pycord-development/execute-whitelist-action@v1.0.4
         with:
           whitelisted-github-ids: ${{ vars.ALLOWED_USER_IDS }}
           token: ${{ secrets.GITHUB_TOKEN }}
